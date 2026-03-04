@@ -11,7 +11,7 @@ public class Ejercicio20 {
             String linea;
             while ((linea = reader.readLine()) != null) {
                 //System.out.println(linea);
-                numeros.add(Integer.parseInt(linea));
+                numeros.add(Integer.parseInt(linea.trim())); //trim limpia posibles espacios en blanco
             }
         } catch (IOException e) {
             System.out.println("Ocurrió un error al leer el archivo: " + e.getMessage());
